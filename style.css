@@ -1,0 +1,1045 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Sofia Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: url('img/Монтажная область 1.png');
+    /* Путь к изображению */
+    background-repeat: repeat;
+    /* Повторение изображения (нет) */
+    background-size: cover;
+    /* Растягивание изображения по размеру экрана */
+    background-position: center;
+    /* Центрирование изображения */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.nav-link {
+    font-size: 50px;
+    font-family: "Sofia Sans", serif;
+}
+
+.btn {
+    font-family: "Sofia Sans", serif;
+}
+
+.logo {
+
+    height: auto;
+    margin-right: 20px;
+    display: flex;
+}
+
+
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    font-family: "Sofia Sans", serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-family: "Sofia Sans", serif;
+    font-size: 25px;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.text-bg-art {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul li {
+    padding-left: 30px;
+}
+
+.frame {
+    padding: 10px;
+    max-width: 1580px;
+
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: px;
+    font-size: 80px;
+    opacity: 0;
+    /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1;
+    /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards;
+    /* будет видимым после завершения анимации */
+    animation-duration: 4s;
+    /* длительность анимации в 1 секунду */
+}
+
+.frame-art {
+    padding: 10px;
+    max-width: 1580px;
+
+    height: 60px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: px;
+
+
+    font-size: 80px;
+    opacity: 0;
+    /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1;
+    /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards;
+    /* будет видимым после завершения анимации */
+    animation-duration: 4s;
+    /* длительность анимации в 1 секунду */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 2;
+    }
+}
+
+
+
+.text-title h2 {
+    font-family: "Marmelad", serif;
+    font-weight: 560;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+
+.text-title h3 {
+    font-family: "Marmelad", serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: black;
+    margin-top: 10px;
+}
+
+.text-subtitle p {
+    font-family: "Sofia Sans", serif;
+    font-weight: 450;
+    font-size: 30px;
+    color: white;
+}
+
+.text-subtitle-examples {
+    font-family: "Sofia Sans", serif;
+    font-weight: 450;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+
+
+}
+
+.text-title-about h3 {
+    font-family: "Marmelad", serif;
+    font-weight: 450;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 80px;
+
+
+
+}
+
+.text-title-about p {
+    font-family: "Marmelad", serif;
+    font-weight: 250;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 20px;
+
+}
+
+
+.my-carousel {
+    width: 1000px;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.text-title-art h4 {
+    font-family: "Marmelad", serif;
+    color: black;
+    font-weight: 450;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.text-title-art p {
+    font-family: "Marmelad", serif;
+    font-weight: 450;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.text-subtitle-examples li {
+    list-style-type: none;
+    /* Убираем маркеры у элементов списка */
+    padding-left: 0;
+    margin-left: 60px;
+}
+
+.photo-container {
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .logo p {
+        font-size: 24px;
+    }
+
+    .img-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    /* Для эффекта при наведении */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author-info-art {
+    font-family: "Marmelad", serif;
+    font-weight: 100;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name,
+.tg-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-style {
+    font-family: "Marmelad", serif;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.author-style-art {
+    margin-left: 10px;
+}
+
+.author-avatar {
+    width: 90px;
+    height: 60px;
+    border-radius: 5px;
+    /* Чтобы сделать аватар круглым */
+    margin-right: 10px;
+}
+
+.author-avatar-art {
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+    /* Чтобы сделать аватар круглым */
+    margin-right: 10px;
+}
+
+.author-details {
+    margin-right: auto;
+}
+
+.text-ava {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.author-title {
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.author-subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+.author-name {
+    font-family: "Sofia Sans", serif;
+    color: black;
+    font-size: 50px;
+    font-weight: 650;
+    margin-left: 10px;
+    font-size: 18px;
+
+}
+
+
+.author-name-art {
+    font-family: "Sofia Sans", serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+
+footer {
+    background-color: black;
+    margin-top: 40px;
+
+}
+
+.footer-title {
+    font-family: "Sofia Sans", serif;
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+}
+
+.footer-subtitle {
+    font-family: "Sofia Sans", serif;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-qr img {
+    border-radius: 8px;
+    float: right;
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.footer-title {
+    float: left;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.footer-subtitle {
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.frame-carusel {
+    margin-top: px;
+    margin-left: px;
+    float: left;
+    width: 1250px;
+
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-width: 2px;
+    border-color: white;
+
+}
+
+.carusels {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.frame-carusel-art-wh {
+
+
+    background: rgb(255, 255, 255);
+    /* Цвет фона */
+
+    border-radius: 10px;
+    /* Радиус скругления */
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 585px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-width: 2px;
+    border: 3px solid black;
+
+}
+
+.frame-carusel-art-index {
+    background: rgb(255, 255, 255);
+    /* Цвет фона */
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
+    /* Радиус скругления */
+    background-position: center;
+    height: 750px;
+    width: 1006px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-width: 2px;
+    border: 3px solid black;
+}
+
+.carousel-item {
+    width: 900px;
+}
+
+.frame-carusel-art {
+
+
+
+    width: 580px;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+
+}
+
+.author-ava {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+
+.like-button {
+
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 150px;
+    height: 40px;
+    width: 40px;
+}
+
+.like-button:hover {
+    color: #ff0000;
+}
+
+.like-icon {
+    font-size: 24px;
+}
+
+.like-count {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.img-cat {
+    height: 900px;
+    width: 900px;
+}
+
+
+
+
+
+.register {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-registerm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FF8C00;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reg {
+    background-color: #FF8C00;
+    border-radius: 10px;
+    /* Радиус скругления */
+    color: white;
+    border: 1px;
+    width: 300px;
+    height: 40px;
+    font-weight: 30px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.input-reg {
+    margin: 50px;
+
+}
+
+.register-form {
+    margin: 30px auto;
+    border-radius: 10px;
+    /* Радиус скругления */
+    padding: 50px;
+
+    max-width: 560px;
+
+
+    border-width: 2px;
+    border: 3px solid black;
+}
+
+
+@media screen and (max-width: 992px) {
+    .register {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .register-form,
+    .register,
+    .form-registerm,
+    .reg-store {
+        font-size: 18px;
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    .text-title h2 {
+        font-size: 25px;
+    }
+
+    .text-subtitle p {
+        font-size: 20px;
+    }
+
+    .text-subtitle-examples {
+        font-size: 18px;
+    }
+
+    .text-title-about h3 {
+        font-size: 20px;
+    }
+
+    .text-title-about p {
+        font-size: 18px;
+    }
+
+    .text-title-art h4 {
+        font-size: 20px;
+    }
+
+    .text-title h3 {
+        font-size: 40px;
+    }
+
+    .footer-title {
+        font-size: 50px;
+    }
+
+    .footer-subtitle {
+        font-size: 25px;
+    }
+
+    .footer-qr img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .register {
+        font-size: 28px;
+    }
+
+    .reg {
+        width: 300px;
+        height: 40px;
+    }
+
+    .reg-store {
+        width: 500px;
+
+    }
+
+    /*Настройка карусели на ГЛАВНОЙ странице (отличительный класс my-carousel*/
+    .frame-carusel-art-index {
+        max-width: 95%;
+        width: auto;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .my-carousel {
+        width: 350px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 17px;
+    }
+
+    .frame-carusel {
+        width: 100%;
+    }
+
+    .carousel {
+        margin: 0 auto;
+    }
+
+    .my-carousel .carousel-item img {
+
+        width: 350px;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .register {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .register-form,
+    .register,
+    .form-registerm,
+    .reg-store {
+        font-size: 18px;
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    .text-title h2 {
+        font-size: 25px;
+    }
+
+    .text-subtitle p {
+        font-size: 20px;
+    }
+
+    .text-subtitle-examples {
+        font-size: 18px;
+    }
+
+    .text-title h3 {
+        font-size: 30px;
+    }
+
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .footer-subtitle {
+        font-size: 20px;
+    }
+
+    .footer-qr img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .register {
+        font-size: 25px;
+    }
+
+    .reg {
+        width: 250px;
+        height: 40px;
+    }
+
+    /*Настройка карусели на ГЛАВНОЙ странице (отличительный класс my-carousel*/
+    .frame-carusel-art-index {
+        max-width: 95%;
+        width: auto;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .my-carousel {
+        width: 350px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 17px;
+    }
+
+    .frame-carusel {
+        width: 100%;
+    }
+
+    .carousel {
+        margin: 0 auto;
+    }
+
+    .my-carousel .carousel-item img {
+
+        width: 350px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 578px) {
+    .register {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .register-form,
+    .register,
+    .form-registerm,
+    .reg-store {
+        font-size: 18px;
+        max-width: 100%;
+        width: auto;
+        margin: 10px auto;
+        border: none;
+        padding: 0;
+    }
+
+    .text-title h2 {
+        font-size: 25px;
+    }
+
+    .text-subtitle p {
+        font-size: 20px;
+    }
+
+    .text-subtitle-examples {
+        font-size: 18px;
+    }
+
+    .text-title h3 {
+        font-size: 25px;
+    }
+
+    .footer-title {
+        font-size: 25px;
+    }
+
+    .footer-subtitle {
+        font-size: 18px;
+    }
+
+    .footer-qr img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .register {
+        font-size: 20px;
+    }
+
+    .reg {
+        width: 250px;
+        height: 40px;
+    }
+
+    .reg-store {
+        width: 100px;
+
+    }
+
+    /*Настройка карусели на ГЛАВНОЙ странице (отличительный класс my-carousel*/
+    .frame-carusel-art-index {
+        max-width: 95%;
+        width: auto;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .my-carousel {
+        width: 350px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 17px;
+    }
+
+    .frame-carusel {
+        width: 100%;
+    }
+
+    .carousel {
+        margin: 0 auto;
+    }
+
+    .my-carousel .carousel-item img {
+
+        width: 350px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 378px) {
+    .register {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .register-form,
+    .register,
+    .form-registerm,
+    .reg-store {
+        font-size: 18px;
+        max-width: 100%;
+        width: auto;
+        margin: 10px auto;
+        border: none;
+        padding: 0;
+    }
+
+    .text-title h2 {
+        font-size: 25px;
+    }
+
+    .text-subtitle p {
+        font-size: 20px;
+    }
+
+    .text-subtitle-examples {
+        font-size: 10px;
+    }
+
+    .text-title h3 {
+        font-size: 20px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-subtitle {
+        font-size: 16px;
+    }
+
+    .footer-qr img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .register {
+        font-size: 20px;
+        
+    }
+
+    .reg {
+        width: 250px;
+        height: 40px;
+    }
+
+    .reg-store {
+        width: 50px;
+        
+
+    }
+
+    /*Настройка карусели на ГЛАВНОЙ странице (отличительный класс my-carousel*/
+    .frame-carusel-art-index {
+        max-width: 95%;
+        width: auto;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .my-carousel {
+        width: 350px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 17px;
+    }
+
+    .frame-carusel {
+        width: 100%;
+    }
+
+    .carousel {
+        margin: 0 auto;
+    }
+
+    .my-carousel .carousel-item img {
+        object-fit: cover;
+    }
+
+ /*Карусель на странице "Художники"*/
+ .carousels {
+    max-width: 90%;
+    width: 10px auto;
+    padding: 0;
+}
+.carousels .carousel{
+    width: 300px;
+}
+.artists-carousel {
+    max-width: 95%;
+    width: auto;
+}
+
+.frame-carusel-art-wh {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 15px;
+}
+.frame-carusel-art{
+    width: 95%;
+}
+.artists-carousel .carousel-inner {
+    width: 300px;
+    padding: 0;
+}
+
+.artists-carousel-picture {
+    width: 50%;
+}
+
+.author-info-art {
+    width: 200px;
+}
+
+.author-ava {
+    width: 50px;
+    height: 50px;
+}
+
+.author-name-art {
+    font-size: 15px;
+}
+
+.like-button {
+    margin-left: 15px;
+    height: 10px;
+    width: 10px;
+}
+.artists-carousel button{
+    display: none;
+}
+}
+
+
+
+
+@media screen and(max-width: 992px) {
+    .carousel-inner img {
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .frame-carusel {
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .text-title h2 {
+        font-size: 25px;
+    }
+}

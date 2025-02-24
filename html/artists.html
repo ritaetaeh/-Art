@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мастерская искусства</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="100" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../index.html" class="nav-link px-2 text-secondary">Главная</a></li>
+          <li><a href="artists.html" class="nav-link px-2 text-white">Художники</a> </li>
+          <li><a href="#" class="nav-link px-2 text-white">Публикации</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Галерея</a></li>
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Вход</button>
+          <a href="registrashn.html"><button type="button" class="btn btn-warning">Регестрация</button></a>
+        </div>
+      </div>
+
+      <div class="logo">
+        <img src="../img/Лого6.png" class="img-logo">
+        <div class="heading-container">
+          <h1 class="title"> Мастерская искусства </h1>
+          <p class="subtitle"> Творчество без границ</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="text-bg-art">
+    <div class="frame-art">
+      <div class="text-title ">
+        <h3> Работы художников:</h3>
+      </div>
+
+    </div>
+
+    <div class="carusels">
+
+      <div class="frame-carusel-art-wh">
+        <div class="frame-carusel-art">
+          <div id="carouselExampleAutoplaying" class="carousel slide artists-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/фрейм я.png" class="d-block w-100" alt="Фото1">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../img/фрейм 7чуж.png" class="d-block w-100" alt="Фото3">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../img/фрейм 8кеп.png" class="d-block w-100" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 9леха.png" class="d-block w-100" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 16красн.png" class="d-block w-100" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 17бел.png" class="d-block w-100" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 11кот.png" class="d-block w-100" alt="Фото3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="author-info-art">
+              <img class="author-ava" img src="../img/photo_5276041150890895665_x (1).jpg">
+              <div class="text-avatarka">
+                <div class="text-ava">
+                  <div class="name">
+                    <h1 class="author-name-art"> Cтиль: Семиреализм </h1>
+                    <h2 class="author-name-art"> ТГ канал: @nensn5</h2>
+                  </div>
+
+                  <div class="like-button" onclick="like()">
+                    <span class="like-icon">💖</span>
+                    <span class="like-count">0</span>
+
+                    <script> function like() { const likeCountElement = document.querySelector('.like-count'); let likeCount = parseInt(likeCountElement.textContent); likeCount++; likeCountElement.textContent = likeCount; } </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame-carusel-art-wh">
+        <div class="frame-carusel-art">
+          <div id="carouselExampleAutoplaying" class="carousel slide artists-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/фрейм 15.png" class="d-block w-100 artists-carousel-picture" alt="Фото1">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 14.png" class="d-block w-100 artists-carousel-picture" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 13.png" class="d-block w-100 artists-carousel-picture" alt="Фото3">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/фрейм 12.png" class="d-block w-100 artists-carousel-picture" alt="Фото3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="author-info-art">
+              <img class="author-ava" img src="../img/photo_5404475215800560744_c.jpg">
+              <div class="text-ava">
+                <div class="name">
+                  <h1 class="author-name-art"> Cтиль: Аниме </h1>
+                  <h2 class="author-name-art"> ТГ канал: @din_don_studio</h2>
+                </div>
+
+              </div>
+
+              <div class="like-button" onclick="like()">
+                <span class="like-icon">💖</span>
+                <span class="like-count">0</span>
+
+                <script> function like() { const likeCountElement = document.querySelector('.like-count'); let likeCount = parseInt(likeCountElement.textContent); likeCount++; likeCountElement.textContent = likeCount; } </script>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+<footer>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        <h4 class="footer-title">Как опубликовать свою работу?</h4>
+        <p class="footer-subtitle"> Если вы хотите выложить свою работу, то пишите сюда! </p>
+      </div>
+      <div class="footer-qr">
+        <img src="../img/Qrкод.png">
+</footer>
+
+</html>
